@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Form</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 설문지 헤더 -->
+      <header class="header">
+        <input class="header-title" type="text" placeholder="제목없는 설문지" />
+        <input class="header-content" type="text" placeholder="설문지 설명" />
+      </header>
+      <!-- / 설문지 헤더 -->
+
+      <!-- 설문지 내용 -->
+      <main class="main">
+        <!-- 제목 -->
+        <section class="main-title">
+          <input type="text" placeholder="제목없는 설문" />
+          <select class="main-select" name="type">
+            <option value="단답형">단답형</option>
+            <option value="장문형">장문형</option>
+            <option value="객관식" selected>객관식</option>
+            <option value="체크박스">체크박스</option>
+            <option value="드롭다운">드롭다운</option>
+          </select>
+        </section>
+        <!-- // 제목 -->
+
+        <!-- 내용 추가 -->
+        <section class="main-content"></section>
+        <!-- // 내용 추가 -->
+
+        <!-- 버튼 -->
+        <section class="main-btn">
+          <button type="button" class="main-btn-copy">복사</button>
+          <button type="button" class="main-btn-delete">삭제</button>
+        </section>
+        <!-- // 버튼 -->
+      </main>
+      <!-- // 설문지 내용 -->
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

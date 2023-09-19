@@ -20,8 +20,9 @@ btnReset.addEventListener("click", () => {
 
 function countTimer (obj) {
 console.log(hour, min, sec, timer);
-  sec--;
+  
   if(sec > 0){
+    sec--;
     document.querySelector(".sec").value = sec;    
   } else {
     if(min > 0){
